@@ -3,7 +3,8 @@
 So often do small startups and ventures crumble at very early stages due to lack of accessibility to funds. There is no easy way by which they can turn their brainstorming ideas into practical products. They need a simple online platform where they can not only tell their ideas to the world, but also raise funds from investors. Investors, on the other hand, need a trustable platform where they can perform transactions easily and have a trust factor in the company they are investing their money in.
 
 ### **2.Proposed Solution-**
-Here comes **CATALYST 2.O**, an online platform where great ideas meet their path ahead. Here, the user can choose either of 2 profiles- 1. The Company/Startup; 2. The investor. We have built a platform where they can come together and companies can raise funds based on certain terms and investors can invest in the domains they might be interested in.
+Here comes **CATALYST 2.O**, an online funding platform where the companies can raise funds as well as invest. The money transfer system is made using Blockchain technology thus making it decentralized and secure.
+Here, the user can choose either of 2 profiles- 1. The Company/Startup; 2. The investor. We have built a platform where they can come together and companies can raise funds based on certain terms and investors can invest in the domains they might be interested in.
 
 ### **3. Key Features-**
 **(i) SMART CONTRACT:** 
