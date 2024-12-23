@@ -6,74 +6,94 @@
     <title>Dashboard</title>
     <style>
         body {
-      font-family: Arial, sans-serif;
-      background-image:  linear-gradient(to right,#9187f0, #c0e4f3);
-    }
-    .container {
-      max-width: 800px; /* Increase container width */
-      margin: 20px auto; /* Add margin around container */
-      padding: 20px;
-      background-color: #fff;
-      border-radius: 10px;
-      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-      text-align: center;
-    }
-    h1 {
-      font-size: 36px; /* Increase heading font size */
-      margin-top: 0;
-      margin-bottom: 20px; /* Add margin below heading */
-    }
-    .company-card {
-      max-width: 600px; /* Increase company card width */
-      margin: 0 auto; /* Center company card */
-      background-color: #fff;
-      border-radius: 10px;
-      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-      padding: 20px;
-      text-align: center;
-    }
-    .company-info {
-      font-size: 18px;
-      margin-bottom: 20px;
-    }
-    .withdraw-button {
-      background-color: #ff5757;
-      color: #fff;
-      border: none;
-      padding: 10px 20px;
-      font-size: 16px;
-      border-radius: 5px;
-      cursor: pointer;
-      transition: background-color 0.3s ease;
-    }
-    .withdraw-button:hover {
-      background-color: #e74c3c;
-}   
-    #myid{
-        color: aqua;
-    }
-</style>
-    
+            font-family: Arial, sans-serif;
+            background-image: linear-gradient(to left bottom, #f32300, #e74e00, #db6700, #d07a17, #c6892f);
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+            margin: 0;
+        }
+        .container {
+            max-width: 1600px; /* Increase container width */
+            margin: 50px auto; /* Add margin around container */
+            padding: 70px;
+            background-color: #fff8e1; /* Light yellow color */
+            border-radius: 10px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.8);
+            text-align: center;
+        }
+        h1 {
+            font-size: 42px; /* Increase heading font size */
+            margin-top: 0;
+            margin-bottom: 20px; /* Add margin below heading */
+        }
+        .company-card {
+            max-width: 1200px; /* Increase company card width */
+            margin: 60px auto; /* Center company card */
+            background-color: #ffcc80; /* Light orange color */
+            border-radius: 10px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.8);
+            padding: 100px;
+            text-align: center;
+        }
+        .company-info {
+            font-size: 22px;
+            margin-bottom: 30px;
+        }
+        .withdraw-button {
+            background-color: #ff5757;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            font-size: 16px;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+        .withdraw-button:hover {
+            background-color: #e74c3c;
+        }
+        #myid {
+            color: darkred;
+        }
+        .logout-button {
+            position: fixed;
+            bottom: 20px;
+            left: 20px;
+            background-color: #ff5757;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            font-size: 16px;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+            text-decoration: none;
+            text-align: center;
+        }
+        .logout-button:hover {
+            background-color: #e74c3c;
+        }
+    </style>
 </head>
 <body>
     <div class="container">
-    <h1>Company Dashboard</h1>
-</div>
-    <div class="company-card">
-    <h2>Hello, </h2>
-    <h1 id="myid"><%= name %></h1>
-    <div class="company-info">
-        <p>Total funding required: <%= funding %> ETH</p>
-        <p>Funding received: <%= fr %> ETH</p>
-        <p><b> <%= message %></b></p>
-         </div> 
-
-    <div id="withdraw" name="withdraw">
-        <form method="post" action="/withdraw">
-        <button class="withdraw-button">WITHDRAW</button>
-    </form>
-</div>
+        <h1>Company Dashboard</h1>
     </div>
-    <a href="/">Logout</a>
+    <div class="company-card">
+        <h2>Hello, </h2>
+        <h1 id="myid"><%= name %></h1>
+        <div class="company-info">
+            <p>Total funding required: <%= funding %> ETH</p>
+            <p>Funding received: <%= fr %> ETH</p>
+            <p><b><%= message %></b></p>
+        </div> 
+        <div id="withdraw" name="withdraw">
+            <form method="post" action="/withdraw">
+                <button class="withdraw-button">WITHDRAW</button>
+            </form>
+        </div>
+    </div>
+    <a href="/" class="logout-button">Logout</a>
 </body>
 </html>

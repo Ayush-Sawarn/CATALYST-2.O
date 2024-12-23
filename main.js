@@ -7,7 +7,7 @@ var path = require('path');
 const connection = mysql.createConnection({
     host: 'localhost',
     user: 'root',
-    password: 'Hudaiyur@1',
+    password: 'Ayush@mysql2006',
     database: 'mydb'
 });
 
@@ -168,7 +168,7 @@ app.post('/csignup',(req,res)=>{
 const {Web3}  = require('web3');
 
 // Connect to Ganache RPC server
-const web3 = new Web3('HHTTP://127.0.0.1:7545'); // Use the RPC server address provided by Ganache
+const web3 = new Web3('HTTP://127.0.0.1:7545'); // Use the RPC server address provided by Ganache
 
 // Example: Print the list of accounts
 web3.eth.getAccounts()
@@ -179,8 +179,8 @@ web3.eth.getAccounts()
     console.error('Error:', error);
   });
   
-const investorAddress = '0x2E3F194fd066c217336726923c0791352456957b'; // Replace with the investor's address
-const startupAddress = '0xFd0e997aabbc6a31c27c52979f0D6a8476A4C9F6'; // Replace with the startup's address
+const investorAddress = '0x8099463AE614f91C7618AB6f5eD4fF47Af86cD9E'; // Replace with the investor's address
+const startupAddress = '0x32dBD24E95872dfED421D07ED0bA004A104B531f'; // Replace with the startup's address
 
 const checkBalances = async () => {
     try {

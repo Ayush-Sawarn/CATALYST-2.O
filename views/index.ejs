@@ -3,116 +3,170 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
     <title>CATALYST 2.O</title>
     <!-- Latest compiled and minified CSS -->
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
-
-<!-- jQuery library -->
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
-
-<!-- Latest compiled JavaScript -->
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-<!--<link rel="stylesheet" href="style.css"> -->
-<style>
-    .cards{
-        display: flex;
-        justify-content: center;
-        gap:50px;
-        margin-bottom: 40px;
-    }
-    .card{
-        background-color: white;
-        border-radius: 10px;
-        box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-        padding: 20px;
-    }
-    .button{
-      background-color: #007bff;
-      color: #fff;
-      border: none;
-      padding: 10px 20px;
-      font-size: 18px;
-      border-radius: 5px;
-      cursor: pointer;
-      transition: background-color 0.3s ease;
-    }
-    .button:hover{
-        background-color: #0056b3;
-    }
-    .container{
-        max-width: 800px;
-        margin: 50px auto;
-        text-align: center;
-    }
-    h1{
-        font-size: 48px;
-        margin-bottom: 20px;
-    }
-    body{
-    background-image: linear-gradient(to right , #e078d7, #6684e8);
-}
-    .features {
-      text-align: left;
-    }
-    .feature {
-      margin-bottom: 10px;
-    }
-    .dropdown {
-      display: none;
-      margin-top: 10px;
-      font-size: 14px;
-    }
-    .feature:hover .dropdown {
-      display: block;
-}
-
-</style>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <!--<link rel="stylesheet" href="style.css"> -->
+    <style>
+        .header {
+            background-color: black;
+            color: white;
+            padding: 8px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        .header img {
+            height: 60px; /* Increase the height of the logo */
+        }
+        .header-text {
+            font-size: 24px;
+            font-weight: bold;
+            flex-grow: 1;
+            text-align: left;
+        }
+        .cards {
+            display: flex;
+            justify-content: center;
+            gap: 100px;
+            margin-bottom: 70px;
+        }
+        .card {
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            padding: 40px;
+            width: 350px; /* Set a fixed width for the cards */
+            height: 500px; /* Set a fixed height for the cards */
+            text-align: center;
+            font-size: 24px;
+        }
+        .button {
+            background-color: #4158D0;
+            background-image: linear-gradient(43deg, #4158D0 0%, #C850C0 46%, #FFCC70 100%);
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            font-size: 18px;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+        .container {
+            max-width: 800px;
+            margin: 50px auto;
+            text-align: center;
+        }
+        h1 {
+            font-size: 64px; /* Increased font size for the title */
+            margin-bottom: 20px;
+            color:  #FFFF00;
+            font-family: Courier, monospace; /* Change the font style for the heading */
+        }
+        body {
+            background: rgb(63,94,251);
+            background: radial-gradient(circle, rgba(63,94,251,1) 0%, rgba(252,70,107,1) 100%);
+        }
+        .features-container {
+            margin-top: 20px;
+        }
+        .features {
+            font-size: 20px;
+            text-align: left;
+        }
+        .feature-card {
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            padding: 20px;
+            margin-bottom: 20px;
+            font-size: 20px; /* Increased font size for each point */
+        }
+        .dropdown {
+            display: none;
+            margin-top: 10px;
+            font-size: 14px;
+        }
+        .feature .dropdown-button {
+            background: none;
+            border: none;
+            cursor: pointer;
+            font-size: 20px; /* Increased font size for the dropdown button */
+            color: #007bff;
+        }
+        .card img {
+            width: 100%;
+            height: auto;
+            margin-bottom: 20px;
+        }
+        
+    </style>
 </head>
 <body>
+    <header class="header">
+        <div class="header-text">CATALYST 2.O</div>
+        <img src="https://images.typeform.com/images/ymv8SkhhsatN/image/default" alt="Center Image">
+    </header>
     <div class="container">
-        <h1><b>CATALYST 2.O</b></h1> 
-        <br><br><br><br><br>
-    <div class="cards">
-        <div class="card">
-            <h2><b>COMPANY</b></h2>
-            <form method="post" action="/company">
-       
-                <button type="submit" class="button" >COMPANY</button>
+        <h1><b>CATALYST 2.O</b></h1>
+
+        <div class="cards">
+            <div class="card">
+                <h2><b>COMPANY</b></h2>
+                <img src="https://static.vecteezy.com/system/resources/thumbnails/008/214/517/small_2x/abstract-geometric-logo-or-infinity-line-logo-for-your-company-free-vector.jpg" alt="Business Logo">
+                <form method="post" action="/company">
+                    <button type="submit" class="button">COMPANY</button>
                 </form>
             </div>
             <div class="card">
                 <h2><b>INVESTOR</b></h2>
+                <img src="https://img.freepik.com/premium-vector/business-investment-logo-template_269830-1275.jpg" alt="Investor Logo">
                 <form method="post" action="/investor">
-        
                     <button type="submit" class="button">INVESTOR</button>
-                    </form>
-
+                </form>
             </div>
+        </div>
+        <div class="features-container">
+            <h2><b>Key Features:</b></h2>
+            <div class="feature-card">
+                <div class="feature">
+                    Utilizes blockchain technology for transparent and secure transactions.
+                    <button class="dropdown-button" onclick="toggleDropdown(this)">&#x25BC;</button>
+                    <div class="dropdown">Ensures trust and immutability of transaction records.</div>
+                </div>
+            </div>
+            <div class="feature-card">
+                <div class="feature">
+                    Smart contract integration for automated execution of funding agreements.
+                    <button class="dropdown-button" onclick="toggleDropdown(this)">&#x25BC;</button>
+                    <div class="dropdown">Automates contract execution, reducing manual intervention.</div>
+                </div>
+            </div>
+            <div class="feature-card">
+                <div class="feature">
+                    Decentralized platform for democratized access to investment opportunities.
+                    <button class="dropdown-button" onclick="toggleDropdown(this)">&#x25BC;</button>
+                    <div class="dropdown">Provides equal opportunities for all investors, regardless of location or status.</div>
+                </div>
+            </div>
+        </div>
     </div>
-    <br><br><br><br>
-    <div class="features">
-        <h2><b>Key Features:</b></h2>
-        <ul>
-          <li class="feature">
-            Utilizes blockchain technology for transparent and secure transactions.
-            <div class="dropdown">Ensures trust and immutability of transaction records.</div>
-          </li>
-          <li class="feature">
-            Smart contract integration for automated execution of funding agreements.
-            <div class="dropdown">Automates contract execution, reducing manual intervention.</div>
-          </li>
-          <li class="feature">
-            Decentralized platform for democratized access to investment opportunities.
-            <div class="dropdown">Provides equal opportunities for all investors, regardless of location or status.</div>
-          </li>
-          
-      </ul>
-    </div>
-</div>
-    
-    
 
-
+    <script>
+        function toggleDropdown(button) {
+            var dropdown = button.nextElementSibling;
+            if (dropdown.style.display === "block") {
+                dropdown.style.display = "none";
+                button.innerHTML = "&#x25BC;";
+            } else {
+                dropdown.style.display = "block";
+                button.innerHTML = "&#x25B2;";
+            }
+        }
+    </script>
 </body>
 </html>
